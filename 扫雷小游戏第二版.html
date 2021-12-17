@@ -1,0 +1,82 @@
+<html>
+    <head>
+	<meta charset="utf-8">
+	<title>巨能扫雷</title>
+	<script type="text/javascript" src="mine.js"></script>
+	<link rel="Stylesheet" type="text/css" href="mine.css">
+</head>
+<body>
+
+	<div class="mine-wrap" style="display: block;">
+		<div class="title clearfix">
+			<div class="title-txt">扫雷</div>
+			<ul class="window-control">
+				<li class="window-min"></li>
+				<li class="window-max"></li>
+				<li class="window-close" onclick="window.close()"></li>
+			</ul>
+		</div>
+		<div class="mine-main clearfix">
+			<div class="mine-menu clearfix">
+				<ul class="mine-menu-ul clearfix">
+					<li class="menu-game">游戏
+						<ul class="menu-sub clearfix">
+							<li><span class="menu-sub-left"><input type="radio" name="mine-type" value="0"></span><span class="menu-sub-right">初级</span></li>
+							<li><span class="menu-sub-left"><input type="radio" name="mine-type" value="1"></span><span class="menu-sub-right">中级</span></li>
+							<li><span class="menu-sub-left"><input type="radio" name="mine-type" value="2"></span><span class="menu-sub-right">高级</span></li>
+							<li><span class="menu-sub-left"><input type="radio" name="mine-type" value="3"></span><span class="menu-sub-right">自定义</span></li>
+
+						</ul>
+					</li>
+					<li>帮助</li>
+				</ul>
+			</div>
+			<div class="mine-con">
+				<div class="game-tags clearfix">
+					<div class="game-tag-images">
+						<img src="res/d0.bmp">
+						<img src="res/d0.bmp">
+						<img src="res/d0.bmp">
+					</div>
+					<div class="game-face">
+						<img src="res/face_normal.bmp" onclick="mine1.init()" id="face">
+					</div>
+					<div class="game-time-images">
+						<img src="res/d0.bmp">
+						<img src="res/d0.bmp">
+						<img src="res/d0.bmp">
+					</div>
+				</div>
+				<div class="mine-canvas">
+					<canvas id="mine1" width="" height=""></canvas>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- 预加载图片资源 -->
+	<div class="load-images">
+		<img src="res/blank.bmp">
+		<img src="res/0.bmp">
+		<img src="res/flag.bmp">
+		<img src="res/ask.bmp">
+		<img src="res/mine.bmp">
+		<img src="res/blood.bmp">
+		<img src="res/error.bmp">
+		<img src="res/0.bmp">
+		<img src="res/1.bmp">
+		<img src="res/2.bmp">
+		<img src="res/3.bmp">
+		<img src="res/4.bmp">
+		<img src="res/5.bmp">
+		<img src="res/6.bmp">
+		<img src="res/7.bmp">
+		<img src="res/8.bmp">
+	</div>
+
+	<div class="about">
+		<a href="http://blog.csdn.net/liusaint1992/article/details/50531186" target="_blank">简要说明</a>
+	</div>
+
+
+	</body>
+</html>
